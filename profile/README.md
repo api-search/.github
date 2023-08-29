@@ -1,7 +1,7 @@
 # APIs.io
 This is the GitHub organization for the APIs.io website and developer portal.
 
-You can access the website here: ([Site](https://apis-io-site.apievangelist.com/)) ([Repo](https://github.com/api-search/developer-portal)) ([Tasks](https://github.com/api-search/web-site/issues?q=is%3Aissue+is%3Aopen+label%3Atasks)
+You can access the website here: ([Site](https://apis-io-site.apievangelist.com/)) ([Repo](https://github.com/api-search/developer-portal)) ([Tasks](https://github.com/api-search/web-site/issues?q=is%3Aissue+is%3Aopen+label%3Atasks))
 
 You can access the developer portal here: ([Site](https://apis-io-api.apievangelist.com/)) ([Repo](https://github.com/api-search/web-site))
 
