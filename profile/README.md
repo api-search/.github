@@ -7,6 +7,8 @@ You can access the developer portal here: ([Site](https://apis-io-api.apievangel
 
 We have chosen a modular approach to delivering each API using separate repositories and supporting documentation, keeping the moving parts of the search engine independently operating.
 
+## Core Resources
+
 - **Search** ([Documentation](https://apis-io-search-api.apievangelist.com)) ([Repo](https://github.com/api-search/search-api))
 - **Engine** ([Documentation](apis-io-engine-api.apievangelist.com)) ([Repo](https://github.com/api-search/engine-api))
 - **Ratings** ([Documentation](apis-io-ratings-api.apievangelist.com)) ([Repo](https://github.com/api-search/ratings-api))
@@ -16,5 +18,11 @@ We have chosen a modular approach to delivering each API using separate reposito
 - **Publishing** ([Documentation](apis-io-publishing-api.apievangelist.com)) ([Repo](https://github.com/api-search/publishing-api))
 - **Rules** ([Documentation](apis-io-rules-api.apievangelist.com)) ([Repo](https://github.com/api-search/rules-api))
 - **Tags** ([Documentation](apis-io-tags-api.apievangelist.com)) ([Repo](https://github.com/api-search/tags-api))
+
+## APIs.json
+
+- **Specification** ([Website](https://apisjson.org/))
+- **Builder** ([Website]([https://apisjson.org/](http://builder.apisyaml.org/)))
+- **AratisanlU** ([Repo](https://github.com/api-search/artisanal))
 
 You can ask questions and report issues using this repo, keepping your question focused by using the issues for each individual project, or you can just email [info@apievangelist.com](mailto:info@apievangelist.com).
