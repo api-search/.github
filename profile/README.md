@@ -23,6 +23,6 @@ We have chosen a modular approach to delivering each API using separate reposito
 
 - **Specification** ([Website](https://apisjson.org/))
 - **Builder** ([Website]([https://apisjson.org/](http://builder.apisyaml.org/)))
-- **AratisanlU** ([Repo](https://github.com/api-search/artisanal))
+- **Artisanal** ([Repo](https://github.com/api-search/artisanal))
 
 You can ask questions and report issues using this repo, keepping your question focused by using the issues for each individual project, or you can just email [info@apievangelist.com](mailto:info@apievangelist.com).
