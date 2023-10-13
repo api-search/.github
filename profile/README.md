@@ -21,7 +21,7 @@ This is the GitHub organization for the APIs.io website and developer portal.
 
 # Management
 
-- **Discussions** ([Forum](https://github.com/orgs/api-search/projects/1/views/1)
+- **Discussions** ([Forum](https://github.com/orgs/api-search/projects/1/views/1))
 - **Project** ([Kanban](https://github.com/orgs/api-search/projects/1/views/1))
 
 ## APIs.json
