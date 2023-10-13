@@ -5,7 +5,7 @@ This is the GitHub organization for the APIs.io website and developer portal.
 
  - **Website** ([Site](https://apis-io-site.apievangelist.com/)) ([Repo](https://github.com/api-search/web-site))
  - **Developer Portal** ([Site](https://apis-io-api.apievangelist.com/)) ([Repo](https://github.com/api-search/developer-portal))
- - **Administration** ([Site]([https://apis-io-api.apievangelist.com/](https://apis-io-admin.apievangelist.com/))) ([Repo]([https://github.com/api-search/developer-portal](https://github.com/api-search/admin)))
+ - **Administration** ([Site](https://apis-io-admin.apievangelist.com/))) ([Repo](https://github.com/api-search/admin)))
 
 ## APIs
 
@@ -22,7 +22,7 @@ This is the GitHub organization for the APIs.io website and developer portal.
 # Management
 
 - **Discussions** ([Forum](https://github.com/orgs/api-search/projects/1/views/1)
-- **Project** ([Kanban]([https://github.com/orgs/api-search/projects/1/views/1](https://github.com/orgs/api-search/projects/1/views/1))
+- **Project** ([Kanban]((https://github.com/orgs/api-search/projects/1/views/1))
 
 ## APIs.json
 
