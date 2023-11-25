@@ -3,21 +3,21 @@ This is the GitHub organization for the APIs.io website and developer portal.
 
 ## Sites
 
- - **Website** ([Site](https://apis-io-site.apievangelist.com/)) ([Repo](https://github.com/api-search/web-site))
- - **Developer Portal** ([Site](https://apis-io-api.apievangelist.com/)) ([Repo](https://github.com/api-search/developer-portal))
- - **Administration** ([Site](https://apis-io-admin.apievangelist.com/)) ([Repo](https://github.com/api-search/admin))
+ - **Website** ([Site](https://apis.io/)) ([Repo](https://github.com/api-search/web-site))
+ - **Developer Portal** ([Site](https://developer.apis.io/)) ([Repo](https://github.com/api-search/developer-portal))
+ - **Administration** ([Site](https://admin.apis.io/)) ([Repo](https://github.com/api-search/admin))
 
 ## APIs
 
-- **Search** ([Documentation](https://apis-io-search-api.apievangelist.com)) ([Repo](https://github.com/api-search/search-api))
-- **Engine** ([Documentation](apis-io-engine-api.apievangelist.com)) ([Repo](https://github.com/api-search/engine-api))
-- **Ratings** ([Documentation](apis-io-ratings-api.apievangelist.com)) ([Repo](https://github.com/api-search/ratings-api))
-- **Linter** ([Documentation](apis-io-linter-api.apievangelist.com)) ([Repo](https://github.com/api-search/linter-api))
-- **Maintainers** ([Documentation](apis-io-maintainers-api.apievangelist.com)) ([Repo](https://github.com/api-search/maintainers-api))
-- **Properties** ([Documentation](apis-io-properties-api.apievangelist.com)) ([Repo](https://github.com/api-search/properties-api))
-- **Publishing** ([Documentation](apis-io-publishing-api.apievangelist.com)) ([Repo](https://github.com/api-search/publishing-api))
-- **Rules** ([Documentation](apis-io-rules-api.apievangelist.com)) ([Repo](https://github.com/api-search/rules-api))
-- **Tags** ([Documentation](apis-io-tags-api.apievangelist.com)) ([Repo](https://github.com/api-search/tags-api))
+- **Search** ([Documentation](https://search-docs.apis.io)) ([Repo](https://github.com/api-search/search-api))
+- **Engine** ([Documentation](engine-docs.apis.io))) ([Repo](https://github.com/api-search/engine-api))
+- **Ratings** ([Documentation](ratings-docs.apis.io))) ([Repo](https://github.com/api-search/ratings-api))
+- **Linter** ([Documentation](linter-docs.apis.io))) ([Repo](https://github.com/api-search/linter-api))
+- **Maintainers** ([Documentation](maintainers-docs.apis.io))) ([Repo](https://github.com/api-search/maintainers-api))
+- **Properties** ([Documentation](properties-docs.apis.io))) ([Repo](https://github.com/api-search/properties-api))
+- **Publishing** ([Documentation](publishing-docs.apis.io))) ([Repo](https://github.com/api-search/publishing-api))
+- **Rules** ([Documentation](rules-docs.apis.io))) ([Repo](https://github.com/api-search/rules-api))
+- **Tags** ([Documentation](tags-docs.apis.io))) ([Repo](https://github.com/api-search/tags-api))
 
 # Management
 
