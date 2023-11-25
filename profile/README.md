@@ -10,14 +10,14 @@ This is the GitHub organization for the APIs.io website and developer portal.
 ## APIs
 
 - **Search** ([Documentation](https://search-docs.apis.io)) ([Repo](https://github.com/api-search/search-api))
-- **Engine** ([Documentation](engine-docs.apis.io))) ([Repo](https://github.com/api-search/engine-api))
-- **Ratings** ([Documentation](ratings-docs.apis.io))) ([Repo](https://github.com/api-search/ratings-api))
-- **Linter** ([Documentation](linter-docs.apis.io))) ([Repo](https://github.com/api-search/linter-api))
-- **Maintainers** ([Documentation](maintainers-docs.apis.io))) ([Repo](https://github.com/api-search/maintainers-api))
-- **Properties** ([Documentation](properties-docs.apis.io))) ([Repo](https://github.com/api-search/properties-api))
-- **Publishing** ([Documentation](publishing-docs.apis.io))) ([Repo](https://github.com/api-search/publishing-api))
-- **Rules** ([Documentation](rules-docs.apis.io))) ([Repo](https://github.com/api-search/rules-api))
-- **Tags** ([Documentation](tags-docs.apis.io))) ([Repo](https://github.com/api-search/tags-api))
+- **Engine** ([Documentation](https://engine-docs.apis.io))) ([Repo](https://github.com/api-search/engine-api))
+- **Ratings** ([Documentation](https://ratings-docs.apis.io))) ([Repo](https://github.com/api-search/ratings-api))
+- **Linter** ([Documentation](https://linter-docs.apis.io))) ([Repo](https://github.com/api-search/linter-api))
+- **Maintainers** ([Documentation](https://maintainers-docs.apis.io))) ([Repo](https://github.com/api-search/maintainers-api))
+- **Properties** ([Documentation](https://properties-docs.apis.io))) ([Repo](https://github.com/api-search/properties-api))
+- **Publishing** ([Documentation](https://publishing-docs.apis.io))) ([Repo](https://github.com/api-search/publishing-api))
+- **Rules** ([Documentation](https://rules-docs.apis.io))) ([Repo](https://github.com/api-search/rules-api))
+- **Tags** ([Documentation](https://tags-docs.apis.io))) ([Repo](https://github.com/api-search/tags-api))
 
 # Management
 
