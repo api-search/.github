@@ -9,6 +9,7 @@ This is the GitHub organization for the APIs.io website and developer portal.
 
 ## APIs
 
+- **Authentication** ([Documentation](https://auth-docs.apis.io)) ([Repo](https://github.com/api-search/authentication-api))
 - **Search** ([Documentation](https://search-docs.apis.io)) ([Repo](https://github.com/api-search/search-api))
 - **Engine** ([Documentation](https://engine-docs.apis.io))) ([Repo](https://github.com/api-search/engine-api))
 - **Ratings** ([Documentation](https://ratings-docs.apis.io))) ([Repo](https://github.com/api-search/ratings-api))
