@@ -4,6 +4,7 @@ This is the GitHub organization for the APIs.io website and developer portal.
 ## Sites
 
  - **Website** ([Site](https://apis.io/)) ([Repo](https://github.com/api-search/web-site))
+ - **Explore** ([Site](https://explore.apis.io/)) ([Repo](https://github.com/api-search/explore))
  - **Developer Portal** ([Site](https://developer.apis.io/)) ([Repo](https://github.com/api-search/developer-portal))
  - **Administration** ([Site](https://admin.apis.io/)) ([Repo](https://github.com/api-search/admin))
 
