@@ -28,8 +28,13 @@ This is the GitHub organization for the APIs.io website and developer portal.
 
 ## APIs.json
 
-- **Specification** ([Website](https://apisjson.org/))
+- **Website** ([Website](https://apisjson.org/))
+- **GitHub** ([Organization](https://github.com/apis-json/))
 - **Builder** ([Website](http://builder.apisyaml.org/))
-- **Artisanal** ([Repo](https://github.com/apis-json/artisanal))
+
+## API Commons
+
+- **Website** ([Website](https://apicommons.org/))
+- **GitHub** ([Organization](https://github.com/api-commons/))
 
 You can ask questions and report issues using this repo, keepping your question focused by using the issues for each individual project, or you can just email [info@apievangelist.com](mailto:info@apievangelist.com).
