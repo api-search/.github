@@ -1,20 +1,19 @@
 # APIs.io
-This is the GitHub organization for the APIs.io website and developer portal.
 
-You can access the website here: [Site](https://apis-io-site.apievangelist.com/) [Repo](https://github.com/api-search/developer-portal)
+This is the GitHub organization for [**APIs.io**](https://apis.io) — a federated, agent-friendly directory of public-internet APIs.
 
-You can access the developer portal here: [Site](https://apis-io-api.apievangelist.com/) [Repo](https://github.com/api-search/web-site)
+The organization README shown on [github.com/api-search](https://github.com/api-search) lives in [`profile/README.md`](profile/README.md) and documents the full public network: the per-subdomain sites, the RFC 9727 `api-catalog` linkset, and the `llms.txt` agent feeds.
 
-We have chosen a modular approach to delivering each API using separate repositories and supporting documentation, keeping the moving parts of the search engine independently operating.
+**The repos in this organization are private.** The network is consumed entirely through its public infrastructure:
 
-- Search [Documentation](https://apis-io-search-api.apievangelist.com) [Repo](https://github.com/api-search/search-api)
-- Engine [Documentation](apis-io-engine-api.apievangelist.com) [Repo](https://github.com/api-search/engine-api)
-- Ratings [Documentation](apis-io-ratings-api.apievangelist.com) [Repo](https://github.com/api-search/ratings-api)
-- Linter [Documentation](apis-io-linter-api.apievangelist.com) [Repo](https://github.com/api-search/linter-api)
-- Maintainers [Documentation](apis-io-maintainers-api.apievangelist.com) [Repo](https://github.com/api-search/maintainers-api)
-- Properties [Documentation](apis-io-properties-api.apievangelist.com) [Repo](https://github.com/api-search/properties-api)
-- Publishing [Documentation](apis-io-publishing-api.apievangelist.com) [Repo](https://github.com/api-search/publishing-api)
-- Rules [Documentation](apis-io-rules-api.apievangelist.com) [Repo](https://github.com/api-search/rules-api)
-- Tags [Documentation](apis-io-tags-api.apievangelist.com) [Repo](https://github.com/api-search/tags-api)
+- **[apis.io](https://apis.io)** — the search-and-discovery hub for the whole network
+- Per-entity subdomains — [providers](https://providers.apis.io), [apis](https://apis.apis.io), [schemas](https://schemas.apis.io), [asyncapi](https://asyncapi.apis.io), [events](https://events.apis.io), [json-ld](https://json-ld.apis.io), [rules](https://rules.apis.io), [vocabularies](https://vocabularies.apis.io), [examples](https://examples.apis.io)
+- Discovery dimensions — [tags](https://tags.apis.io), [industries](https://industries.apis.io), [regions](https://regions.apis.io)
+- Agent surfaces — [skills](https://skills.apis.io), [mcp](https://mcp.apis.io)
+- Commercial & operational — [plans](https://plans.apis.io), [rate-limits](https://rate-limits.apis.io), [finops](https://finops.apis.io)
 
-You can ask questions and report issues using this repo, keepping your question focused by using the issues for each individual project, or you can just email [info@apievangelist.com](mailto:info@apievangelist.com).
+Each site publishes its own `llms.txt`, `sitemap.xml`, RFC 9727 `api-catalog`, and (where relevant) `search-index.json`. Start at [apis.io/.well-known/api-catalog](https://apis.io/.well-known/api-catalog) or [apis.io/llms.txt](https://apis.io/llms.txt).
+
+The catalog is licensed for public use including search indexing, AI grounding / RAG, and model training — see [apis.io/terms/](https://apis.io/terms/).
+
+Questions or issues: open an issue on this repo, or email [info@apievangelist.com](mailto:info@apievangelist.com).
