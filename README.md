@@ -7,7 +7,7 @@ The organization README shown on [github.com/api-search](https://github.com/api-
 **The repos in this organization are private.** The network is consumed entirely through its public infrastructure:
 
 - **[apis.io](https://apis.io)** — the search-and-discovery hub for the whole network
-- Per-entity subdomains — [providers](https://providers.apis.io), [apis](https://apis.apis.io), [schemas](https://schemas.apis.io), [asyncapi](https://asyncapi.apis.io), [events](https://events.apis.io), [json-ld](https://json-ld.apis.io), [rules](https://rules.apis.io), [vocabularies](https://vocabularies.apis.io), [examples](https://examples.apis.io)
+- Per-entity subdomains — [providers](https://providers.apis.io), [apis](https://apis.apis.io), [schemas](https://schemas.apis.io), [collections](https://collections.apis.io), [asyncapi](https://asyncapi.apis.io), [graphql](https://graphql.apis.io), [events](https://events.apis.io), [arazzo](https://arazzo.apis.io), [json-ld](https://json-ld.apis.io), [rules](https://rules.apis.io), [vocabularies](https://vocabularies.apis.io), [examples](https://examples.apis.io)
 - Discovery dimensions — [tags](https://tags.apis.io), [industries](https://industries.apis.io), [regions](https://regions.apis.io)
 - Agent surfaces — [skills](https://skills.apis.io), [mcp](https://mcp.apis.io)
 - Commercial & operational — [plans](https://plans.apis.io), [rate-limits](https://rate-limits.apis.io), [finops](https://finops.apis.io)

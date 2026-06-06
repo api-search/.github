@@ -25,8 +25,11 @@ Every site is a separate Jekyll deploy on GitHub Pages. All share one upstream p
 | **[providers.apis.io](https://providers.apis.io)** | API provider profiles — one page per organization, with cross-links to every artifact that organization publishes |
 | **[apis.apis.io](https://apis.apis.io)** | Individual API records — one page per published API, with the OpenAPI spec and provider link |
 | **[schemas.apis.io](https://schemas.apis.io)** | JSON Schemas extracted from every indexed API — Google Dataset Search ingestion-ready |
+| **[collections.apis.io](https://collections.apis.io)** | Postman Collections and Open Collections — ready-to-run request sets for thousands of APIs |
 | **[asyncapi.apis.io](https://asyncapi.apis.io)** | AsyncAPI event-driven specifications |
+| **[graphql.apis.io](https://graphql.apis.io)** | GraphQL API specifications — endpoint URLs, documentation, and reference links |
 | **[events.apis.io](https://events.apis.io)** | Event channels drilled out of every AsyncAPI spec — one page per channel |
+| **[arazzo.apis.io](https://arazzo.apis.io)** | Arazzo API workflow specs — provider-specific and cross-provider multi-step workflows |
 | **[json-ld.apis.io](https://json-ld.apis.io)** | JSON-LD contexts and semantic vocabularies |
 | **[rules.apis.io](https://rules.apis.io)** | Spectral governance rulesets |
 | **[vocabularies.apis.io](https://vocabularies.apis.io)** | Provider tag vocabularies powering the advanced search |
