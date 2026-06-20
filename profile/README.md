@@ -1,72 +1,81 @@
 # APIs.io — Federated API Search Network
 
-[**APIs.io**](https://apis.io) is a federated, agent-friendly directory of public-internet APIs. It indexes API providers from across the web — their APIs, JSON Schemas, event-driven specifications, governance rules, vocabularies, JSON-LD contexts, pricing plans, rate limits, FinOps profiles, the agent surfaces they publish (Agent Skills and MCP servers), and the industries and regions they serve — and exposes each slice of metadata at its own subdomain.
+[**APIs.io**](https://apis.io) is a federated, agent-friendly directory of public-internet APIs. It indexes API providers from across the web — their APIs, JSON Schemas, event-driven specifications, governance rules, vocabularies, JSON-LD contexts, pricing plans, rate limits, FinOps profiles, the agent surfaces they publish (Agent Skills and MCP servers), and the industries and regions they serve — and publishes every slice of metadata as its own browsable section of the site.
 
-Every site is a separate Jekyll deploy on GitHub Pages. All share one upstream provider catalog, all carry the same agent-readiness baseline (`llms.txt`, RFC 9727 `api-catalog`, permissive `robots.txt`, schema.org JSON-LD), and all are publicly accessible at the URLs below.
+The whole network is served from a **single origin** — one S3 + CloudFront distribution on the apex domain [`apis.io`](https://apis.io). Each catalog renders into its own path namespace (`apis.io/providers/`, `apis.io/schemas/`, …), and a read-only **search API** and an **MCP server** are served as paths under the same origin. The legacy per-subdomain sites (`providers.apis.io`, `schemas.apis.io`, …) now `301`-redirect to their apex paths and are kept only as aliases. Every section carries the same agent-readiness baseline (`llms.txt`, RFC 9727 `api-catalog`, permissive `robots.txt`, schema.org JSON-LD).
 
-> The repos in this organization are private. **The network is consumed via the public subdomains, the RFC 9727 `api-catalog` linkset, the `llms.txt` / `llms-full.txt` agent feeds, and the per-subdomain sitemaps.** Everything below is open-access content, free to search, ground LLMs against, train on, or republish — see [https://apis.io/terms/](https://apis.io/terms/) for the full terms.
+> **The network is consumed via [apis.io](https://apis.io), the [search API](https://apis.io/developer) and [MCP server](https://apis.io/mcp), the RFC 9727 `api-catalog` linkset, the `llms.txt` / `llms-full.txt` agent feeds, and the sitemaps.** Everything below is open-access content, free to search, ground LLMs against, train on, or republish — see [https://apis.io/terms/](https://apis.io/terms/) for the full terms.
 
-## The network — public sites
+## The network — public catalogs
 
 ### Search & discovery hub
 
-| Site | What you'll find |
+| Section | What you'll find |
 |---|---|
 | **[apis.io](https://apis.io)** | Search hub for the whole network — search by provider, schema, tag, or name; blog; cross-network insights |
-| **[tags.apis.io](https://tags.apis.io)** | Tag index across the network — every provider and API that carries a tag, scored and ranked |
-| **[industries.apis.io](https://industries.apis.io)** | 29 industry verticals (Financial Services, Healthcare, Manufacturing, Transportation, Energy, Government, …) |
-| **[regions.apis.io](https://regions.apis.io)** | 17 macro sales regions (North America, LATAM, EMEA, APAC, Greater China, ANZ, …) |
-| **[developer.apis.io](https://developer.apis.io)** | Developer portal & machine-readable feeds |
+| **[apis.io/tags/](https://apis.io/tags/)** | Tag index across the network — every provider and API that carries a tag, scored and ranked |
+| **[apis.io/industries/](https://apis.io/industries/)** | 29 industry verticals (Financial Services, Healthcare, Manufacturing, Transportation, Energy, Government, …) |
+| **[apis.io/regions/](https://apis.io/regions/)** | 17 macro sales regions (North America, LATAM, EMEA, APAC, Greater China, ANZ, …) |
+| **[apis.io/developer](https://apis.io/developer)** | Developer portal & machine-readable feeds |
 
 ### Per-entity catalogs
 
-| Site | What you'll find |
+| Section | What you'll find |
 |---|---|
-| **[providers.apis.io](https://providers.apis.io)** | API provider profiles — one page per organization, with cross-links to every artifact that organization publishes |
-| **[apis.apis.io](https://apis.apis.io)** | Individual API records — one page per published API, with the OpenAPI spec and provider link |
-| **[schemas.apis.io](https://schemas.apis.io)** | JSON Schemas extracted from every indexed API — Google Dataset Search ingestion-ready |
-| **[collections.apis.io](https://collections.apis.io)** | Postman Collections and Open Collections — ready-to-run request sets for thousands of APIs |
-| **[asyncapi.apis.io](https://asyncapi.apis.io)** | AsyncAPI event-driven specifications |
-| **[graphql.apis.io](https://graphql.apis.io)** | GraphQL API specifications — endpoint URLs, documentation, and reference links |
-| **[events.apis.io](https://events.apis.io)** | Event channels drilled out of every AsyncAPI spec — one page per channel |
-| **[arazzo.apis.io](https://arazzo.apis.io)** | Arazzo API workflow specs — provider-specific and cross-provider multi-step workflows |
-| **[json-ld.apis.io](https://json-ld.apis.io)** | JSON-LD contexts and semantic vocabularies |
-| **[rules.apis.io](https://rules.apis.io)** | Spectral governance rulesets |
-| **[vocabularies.apis.io](https://vocabularies.apis.io)** | Provider tag vocabularies powering the advanced search |
-| **[examples.apis.io](https://examples.apis.io)** | API usage examples |
+| **[apis.io/providers/](https://apis.io/providers/)** | API provider profiles — one page per organization, with cross-links to every artifact that organization publishes |
+| **[apis.io/apis/](https://apis.io/apis/)** | Individual API records — one page per published API, with the OpenAPI spec and provider link |
+| **[apis.io/schemas/](https://apis.io/schemas/)** | JSON Schemas extracted from every indexed API — Google Dataset Search ingestion-ready |
+| **[apis.io/collections/](https://apis.io/collections/)** | Postman Collections and Open Collections — ready-to-run request sets for thousands of APIs |
+| **[apis.io/asyncapis/](https://apis.io/asyncapis/)** | AsyncAPI event-driven specifications |
+| **[apis.io/graphqls/](https://apis.io/graphqls/)** | GraphQL API specifications — endpoint URLs, documentation, and reference links |
+| **[apis.io/channels/](https://apis.io/channels/)** | Event channels drilled out of every AsyncAPI spec — one page per channel |
+| **[apis.io/arazzos/](https://apis.io/arazzos/)** | Arazzo API workflow specs — provider-specific and cross-provider multi-step workflows |
+| **[apis.io/jsonld/](https://apis.io/jsonld/)** | JSON-LD contexts and semantic vocabularies |
+| **[apis.io/rules/](https://apis.io/rules/)** | Spectral governance rulesets |
+| **[apis.io/vocabularies/](https://apis.io/vocabularies/)** | Provider tag vocabularies powering the advanced search |
+| **[apis.io/examples/](https://apis.io/examples/)** | API usage examples |
 
 ### Agent surfaces
 
-| Site | What you'll find |
+| Section | What you'll find |
 |---|---|
-| **[skills.apis.io](https://skills.apis.io)** | Official Claude Agent Skill index — `SKILL.md` files published by providers, with per-skill and per-provider pages |
-| **[mcp.apis.io](https://mcp.apis.io)** | Official Model Context Protocol server index — one page per MCP server, with install hints and source links |
+| **[apis.io/skills/](https://apis.io/skills/)** | Official Claude Agent Skill index — `SKILL.md` files published by providers, with per-skill and per-provider pages |
+| **[apis.io/servers/](https://apis.io/servers/)** | Official Model Context Protocol server index — one page per MCP server, with install hints and source links |
 
 ### Commercial & operational surfaces
 
-| Site | What you'll find |
+| Section | What you'll find |
 |---|---|
-| **[plans.apis.io](https://plans.apis.io)** | API pricing-plan profiles (API Commons Plans format) |
-| **[rate-limits.apis.io](https://rate-limits.apis.io)** | API rate-limit profiles (API Commons Rate Limits format) |
-| **[finops.apis.io](https://finops.apis.io)** | API FinOps profiles aligned with the FinOps Foundation FOCUS framework |
+| **[apis.io/plans/](https://apis.io/plans/)** | API pricing-plan profiles (API Commons Plans format) |
+| **[apis.io/rate-limits/](https://apis.io/rate-limits/)** | API rate-limit profiles (API Commons Rate Limits format) |
+| **[apis.io/finops/](https://apis.io/finops/)** | API FinOps profiles aligned with the FinOps Foundation FOCUS framework |
+
+## Agentic access — search API & MCP server
+
+The same catalog is queryable programmatically, served as paths under the apex origin:
+
+| Surface | URL |
+|---|---|
+| **Search API** (REST, metered & tiered) | [apis.io/api/v1](https://apis.io/api/v1) — see [apis.io/developer](https://apis.io/developer) |
+| **MCP server** (Streamable HTTP, tier-gated tools) | [apis.io/mcp](https://apis.io/mcp) |
+
+Access is **metered, tiered, and monetized** — a free tier plus paid tiers (GitHub OAuth sign-in, API keys, Stripe billing). The developer portal at [apis.io/developer](https://apis.io/developer) documents the endpoints, authentication, and tiers.
 
 ## Machine-readable feeds
 
 | Feed | URL |
 |---|---|
-| **RFC 9727 `api-catalog` linkset (full network)** | [apis.io/.well-known/api-catalog](https://apis.io/.well-known/api-catalog) |
-| **`api-catalog` (providers slice)** | [providers.apis.io/.well-known/api-catalog](https://providers.apis.io/.well-known/api-catalog) |
-| **`api-catalog` (APIs slice)** | [apis.apis.io/.well-known/api-catalog](https://apis.apis.io/.well-known/api-catalog) |
-| **`llms.txt` (agent overview, per site)** | [apis.io/llms.txt](https://apis.io/llms.txt) |
+| **RFC 9727 `api-catalog` linkset** | [apis.io/.well-known/api-catalog](https://apis.io/.well-known/api-catalog) |
+| **`llms.txt` (agent overview)** | [apis.io/llms.txt](https://apis.io/llms.txt) |
 | **`llms-full.txt` (dense reference)** | [apis.io/llms-full.txt](https://apis.io/llms-full.txt) |
-| **Sitemap index (all subdomains)** | [apis.io/sitemap_index.xml](https://apis.io/sitemap_index.xml) |
+| **Sitemap index (all sections)** | [apis.io/sitemap_index.xml](https://apis.io/sitemap_index.xml) |
 | **APIs.json self-description** | [apis.io/apis.json](https://apis.io/apis.json) |
 
-Each subdomain publishes its own `llms.txt`, `sitemap.xml`, and (where relevant) `search-index.json` for client-side search.
+Each catalog section also publishes its own `llms.txt`, `sitemap.xml`, and (where relevant) `search-index.json` for client-side search.
 
 ## How it works
 
-A central build pipeline reads from a set of upstream provider repos at [github.com/api-evangelist](https://github.com/api-evangelist) — Git-versioned [APIs.json](https://apisjson.org) profiles, one per provider — and emits Jekyll collections into every subdomain site. Each site then renders independently from its own collection.
+A central build pipeline (the [`network`](https://github.com/api-search/network) repo) reads from a set of upstream provider repos at [github.com/api-evangelist](https://github.com/api-evangelist) — Git-versioned [APIs.json](https://apisjson.org) profiles, one per provider — and emits Jekyll collections for every catalog. Each catalog is built independently, then **synced into one S3 bucket** and served through a single CloudFront distribution on `apis.io`; the search API and MCP server run as Lambdas behind API Gateway on the same origin.
 
 Every provider, API, schema, and operational profile page carries:
 
